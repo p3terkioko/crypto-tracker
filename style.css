@@ -11,7 +11,7 @@
     padding: 0 80px;
     margin: auto;
 }
-.navbar fixed-top navbar-light bg-dark{
+.navbar .fixed-top .navbar-light .bg-dark{
     position: fixed;
     width:100%;
     z-index: 999;
@@ -19,6 +19,7 @@
     /*background: black;*/
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+    padding-bottom: 20px;
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -44,7 +45,7 @@
 
 }
 body{
-    background: brown;
+    background:url(./kanchanara-rayxJJNKyhc-unsplash.jpg) no-repeat center;
 }
 .table table-bordered{
     color: #fff;
@@ -57,4 +58,21 @@ P{
     color: #fff;
     font-style: italic;
     font-weight: 800;
+}
+div .move{
+    margin-bottom: 50px;
+}
+a{
+    text-decoration: none;
+}
+footer {
+  
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+td{
+    color: cornflowerblue;
 }
