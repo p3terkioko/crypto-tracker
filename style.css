@@ -45,7 +45,7 @@
 
 }
 body{
-    background:url(./kanchanara-rayxJJNKyhc-unsplash.jpg) no-repeat center;
+    background:url(./tezos-vCf2vSYcFls-unsplash.jpg) no-repeat center;
 }
 .table table-bordered{
     color: #fff;
@@ -74,5 +74,21 @@ footer {
     text-align: center;
 }
 td{
-    color: cornflowerblue;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+
+/* comment section styling */
+body {
+    background: dodgerblue linear-gradient(45deg, aqua, dodgerblue, deeppink) fixed;
+
+}
+#comment-box, #post {
+    border: none;
+    border-radius: 5px;
+}
+#post:hover{
+    background-color: deeppink;
 }
