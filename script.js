@@ -80,23 +80,28 @@ const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=
 document.addEventListener('DOMContentLoaded',function(){
   getPrices()
 })
-
+let element=[]
 function getPrices(){
   fetch(url)
   .then(resp => resp.json())
   .then(data => {
-    data.forEach(element => {
-      singleElem(element)
-      console.log(element)
-    });
+
     
+    tableGenerator(data)
   
   })
 }
-function singleElem(element){
-  console.log(element)
-  let krypt = ""
-  krypt +=`
+
+function tableGenerator(cryptos){
+  console.log(cryptos);
+  console.log(typeof(cryptos))
+
+
+  let krypt = "";
+
+  cryptos.forEach(element => {
+    console.log(cryptos)
+    krypt +=`
   <tr>
         <td>${element.id}</td>
         <td>${element.symbol}</td>
@@ -108,8 +113,9 @@ function singleElem(element){
         <td>${element.last_updated}</td>
       </tr>
   `
+  });
+  
   const KryptoData = document.getElementById('data')
   KryptoData.innerHTML= krypt
 }
-
 
