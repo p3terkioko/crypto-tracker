@@ -15,11 +15,6 @@
     <div class="container-fluid">
       <div class="logo"><a href="#">Crypto<span>Tracker</span></a></div>
       <p>*all prices are in USD*</p>
-      <!-- <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> -->
-      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for coins..">
     </div>
   </nav>
 </div> 
@@ -40,8 +35,9 @@
 </div>
 
 
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for coins.." style="margin-top: 200px;margin-right: 50px;">
 
-  <table id="myTable" class="table table-bordered" style="margin-top: 200px;margin-right: 50px;margin-bottom: 90px;">
+  <table id="myTable" class="table table-bordered" style="margin-bottom: 90px;">
     <thead>
       <tr>
         <th scope="col" style="color: maroon;">Id</th>
@@ -73,6 +69,7 @@
   <!-- contact form -->
   <div class="container">
     <form action="action_page.php">
+      <p>Leave a message</p>
   
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -90,8 +87,6 @@
       <label for="subject">Subject</label>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
   
-      <input type="submit" value="Submit">
-  
     </form>
   </div>
 
@@ -107,6 +102,8 @@
    </ul>
     </div>
 
+
+    <!-- footer -->
   <footer>
     Thank you for visiting my website
     <br>Reach out to me on:</br>
