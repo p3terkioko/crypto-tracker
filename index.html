@@ -19,10 +19,11 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form> -->
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for coins..">
     </div>
   </nav>
 </div> 
-<div class="header" style="margin-top: 90px; margin-left: 150px; margin-bottom: 100px;">
+<div class="header" style="margin-top: 90px; margin-left: 150px; margin-bottom: 100git px;">
   <h1 class="header" style="margin-left: 170px; margin-bottom: 50px;">Keep track all changes in the cryptocurrency market</h1>
   <h2 style="margin-left: 180px; margin-bottom: 50px;">Here are some facts you need to know about crypto</h2>
   <div class="headerin" style="margin-left: 200px; margin-bottom: 50px;">
@@ -38,7 +39,9 @@
   </div>
 </div>
 
-  <table id="#"class="table table-bordered" style="margin-top: 200px;margin-right: 50px;margin-bottom: 90px;">
+
+
+  <table id="myTable" class="table table-bordered" style="margin-top: 200px;margin-right: 50px;margin-bottom: 90px;">
     <thead>
       <tr>
         <th scope="col" style="color: maroon;">Id</th>
@@ -66,6 +69,31 @@
       </tr>
     </tbody>
   </table>
+
+  <!-- contact form -->
+  <div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="kenya">Kenya</option>
+        <option value="united-kingdom">United Kingdom</option>
+        <option value="usa">USA</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
 
 
   <!-- comment section -->
