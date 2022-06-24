@@ -1,4 +1,5 @@
-# phase-1-project
+# Crypto Tracker
+### By Peter Mulu Kioko
 
 This project is aimed at giving real time updates around the cryptocurrency market, moreso on the most commonly traded coins in the market
 
@@ -63,3 +64,7 @@ The app will get data from the coin gecko API which allows a wide range of crypt
   *The market cap
   *The rank
   *The time the data was last updated
+
+### link to the site
+
+Click this link to go to the site [crypto-tracker](https://p3terkioko.github.io/crypto-tracker/)
