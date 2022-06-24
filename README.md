@@ -10,3 +10,56 @@ The project retreives data from the coingecko api whose url is as follows [coing
 The project also incorporates a search bar which minimises the time spent in looking for a specific coin.
 
 The data is stored in a table for easy viewing and gives realtime updates
+The addition of data is done by the following code
+
+```
+function getPrices(){
+  fetch(url)
+  .then(resp => resp.json())
+  .then(data => {
+
+    
+    tableGenerator(data)
+  
+  })
+}
+
+function tableGenerator(cryptos){
+  console.log(cryptos);
+  console.log(typeof(cryptos))
+
+
+  let krypt = "";
+
+  cryptos.forEach(element => {
+    console.log(cryptos)
+    krypt +=`
+  <tr>
+        <td>${element.id}</td>
+        <td>${element.symbol}</td>
+        <td>${element.name}</td>
+        <td> <img src =${element.image}></td>
+        <td>${element.current_price}</td>
+        <td>${element.market_cap}</td>
+        <td>${element.price_change_24h}</td>
+        <td>${element.last_updated}</td>
+      </tr>
+  `
+  });
+  
+  const KryptoData = document.getElementById('data')
+  KryptoData.innerHTML= krypt
+}
+```
+
+## What it aims to solve
+The crypto exchange rate tracker will be able to keep track of cryptocurrency exchange rates and will be accessible to traders on a 24/7 basis. It will keep track of:
+  *BTC(Bitcoin)
+  *ETH(Ethereum)
+Just to name a few.
+
+The app will get data from the coin gecko API which allows a wide range of crypto data. The app mainly specifies on :
+  *The current market price
+  *The market cap
+  *The rank
+  *The time the data was last updated
