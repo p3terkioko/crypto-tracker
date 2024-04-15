@@ -1,5 +1,5 @@
 
-const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2Cethereum%2Ctether%2Cbnb%2Ccardano%2Cxrp%2Csolana%2Cpolkadot%2Cdogecoin%2Cdai%2Ctron%2Cavalanche%2Cpolygon%2Clitecoin%2Cftx%2Cchainlink%2Ccronos%2Cokb%2Cstellar%2Cuniswap%2Calgorand%2Cmonero%2Cchain%2Cvechain%2Cflow%2Chedera%2Cfrax%2Celrond%2Cdecentraland%2Cfilecoin%2Capecoin%2Ctezos%2Chelium%2Ckucoin%2Ceos%2Caave%2Ccusdc%2Cmaker%2Ciota%2Chuobi%2Cquant%2Cecash%2Cklaytn%2Cusdd%2Cfantom%2Cneo%2Cradix%2Ckusama%2Cdash%2Carweave&order=market_cap_desc&per_page=100&page=1&sparkline=false'
+const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=kes&ids=bitcoin%2Cethereum%2Ctether%2Cbnb%2Ccardano%2Cxrp%2Csolana%2Cpolkadot%2Cdogecoin%2Cdai%2Ctron%2Cavalanche%2Cpolygon%2Clitecoin%2Cftx%2Cchainlink%2Ccronos%2Cokb%2Cstellar%2Cuniswap%2Calgorand%2Cmonero%2Cchain%2Cvechain%2Cflow%2Chedera%2Cfrax%2Celrond%2Cdecentraland%2Cfilecoin%2Capecoin%2Ctezos%2Chelium%2Ckucoin%2Ceos%2Caave%2Ccusdc%2Cmaker%2Ciota%2Chuobi%2Cquant%2Cecash%2Cklaytn%2Cusdd%2Cfantom%2Cneo%2Cradix%2Ckusama%2Cdash%2Carweave&order=market_cap_desc&per_page=100&page=1&sparkline=false'
 const newForm = document.getElementById("submit");
 document.addEventListener('DOMContentLoaded',function(){
   
